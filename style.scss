@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Suez+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+// header
+.header-wrap {
+    z-index: 2;
+    position: relative;
+    // background: oldlace;
+    opacity: 1;
+    .header {
+        display: flex;
+        padding: 20px 200px;
+        justify-content: space-around;
+        align-items: center;
+        .logo {
+            border-radius: 20px;
+            display: none;
+        }
+        .nav-bar {
+            width: 600px;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                list-style-type: none;
+                a {
+                    color: #ffffff;
+                    font-size: 1.3em;
+                    font-weight: 600;
+                    text-shadow: 10px 10px 10px black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// slideshow
+.slideshow-container {
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+    .slides {
+        display: none;
+    }
+    img {
+        height: 80vh;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 1s ease;
+    }
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// footer
+.footer {
+    display: none;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    .company-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
