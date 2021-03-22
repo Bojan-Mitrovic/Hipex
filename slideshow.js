@@ -1,43 +1,60 @@
-// var index = 1;
-// showSlides(index);
-
-// function currentSlide(n) {
-//     showSlides(index = n);
-//     console.log('current slides');
-// }
-
-// function showSlides(n) {
-//     var i;
-//     var slides = document.querySelectorAll('.slides');
-//     var dots = document.querySelectorAll('.dot');
-
-//     if (n > slides.length) {
-//         index = 1
-//     }
-//     if (n < 1) {
-//         index = slides.length
-//     }
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace("active", "");
-//     }
-//     slides[index - 1].style.display = "block";
-//     dots[index - 1].className += " active";
-// }
-
+var i = 2;
 var slideIndex = 0;
+
+
+
+
+
+
+function currentSlide(n) {
+    var slides = document.querySelectorAll('.slides');
+    var dots = document.querySelectorAll('.dot');
+
+
+    switch (n) {
+        case 1:
+            slides[0].style.display = 'block';
+            slides[1].style.display = 'none';
+            slides[2].style.display = 'none';
+            break;
+        case 2:
+            slides[0].style.display = 'none';
+            slides[1].style.display = 'block';
+            slides[2].style.display = 'none';
+            break;
+        case 3:
+            slides[0].style.display = 'none';
+            slides[1].style.display = 'none';
+            slides[2].style.display = 'block';
+            break;
+    }
+}
+
+
 showSlides();
 
 function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("slides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+    var slides = document.querySelectorAll('.slides');
+    var dots = document.querySelectorAll('.dot');
+
+    i++;
     slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 6000); // Change image every 2 seconds
+    if (slideIndex > slides.length - 1) {
+        slideIndex = 0;
+    }
+    if (i > slides.length - 1) {
+        i = 0;
+    }
+
+    // Make slide visible
+    slides[slideIndex].style.display = "block";
+    // Hide old slide, currentSlide index minus 1
+    slides[i].style.display = "none";
+    // Dot sign which slide is active
+    dots[slideIndex].style.backgroundColor = 'black';
+    // Unselect last previous dot
+    dots[i].style.backgroundColor = 'white';
+
+
+    setTimeout(showSlides, 6000); // Change image every 6 seconds
 }

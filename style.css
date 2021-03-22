@@ -73,12 +73,21 @@ body {
   height: 80vh;
 }
 
-.slideshow-container .dot {
+.dot-container {
+  z-index: 3;
+  position: absolute;
+  top: 660px;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.dot-container .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  height: 20px;
+  width: 20px;
+  margin: 0 12px;
+  background-color: white;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 1s ease;
@@ -99,7 +108,7 @@ body {
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 1;
   }
   to {
     opacity: 1;
@@ -108,7 +117,7 @@ body {
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 1;
   }
   to {
     opacity: 1;
