@@ -12,65 +12,89 @@
 </head>
 
 <body>
-    <!-- header -->
-    <div class="header-wrap">
-        <div class="header">
-            <div class="logo">
-                <img src="./images/hipex logo.jpg" alt="">
-            </div>
-            <div class="nav-bar-container">
-                <div class="nav-bar">
-                    <ul>
-                        <li><a href="">POČETNA</a></li>
-                        <li><a href="">O NAMA</a></li>
-                        <li><a href="">PROIZVODI I USLUGE</a></li>
-                        <li><a href="">KONTAKT</a></li>
-                    </ul>
+    <div class="main">
+        <!-- header -->
+        <div class="header-wrap">
+            <div class="header">
+                <div class="logo">
+                    <img src="./images/hipex logo.jpg" alt="">
+                </div>
+                <div class="nav-bar-container">
+                    <div class="nav-bar">
+                        <ul>
+                            <li><a href="home.html">POČETNA</a></li>
+                            <li><a href="aboutUs.html">O NAMA</a></li>
+                            <li><a href="">PROIZVODI I USLUGE</a></li>
+                            <li><a href="">KONTAKT</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- slideshow-->
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="./images/voce.jpg" style="width:100%" alt="1st slide ">
+                <div class="text "></div>
+            </div>
+            <div class="slides fade ">
+                <img src="./images/otkup-jagodičastog-voća.png " style="width:100% " alt="2nd slide ">
+                <div class="text "></div>
+            </div>
+            <div class="slides fade ">
+                <img src="./images/višnje.png " style="width:100% " alt="3rd slide ">
+                <div class="text "></div>
+            </div>
+        </div>
+        <!-- slideshow dots -->
+        <div class="dot-container" style="text-align:center ">
+            <span class="dot" onclick="currentSlide(1) "></span>
+            <span class="dot" onclick="currentSlide(2) "></span>
+            <span class="dot" onclick="currentSlide(3) "></span>
+        </div>
+
+        <!-- home about us -->
+        <div class="ripped-background"></div>
+        <div class="about-us-home">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eos quaerat modi, numquam at culpa ullam inventore deleniti labore ea molestiae repellendus, sequi ipsum, earum vel harum perferendis? Quam provident sint nostrum expedita minus
+                debitis quos ipsum iusto, hic veniam!</p>
+            <a href="aboutUs.html" class="more-about-us">
+                <span>SAZNAJ VIŠE</span>
+            </a>
+        </div>
+
+        <!-- ice sector -->
+        <div class="ice-background"></div>
+
+
+        <!-- 4th sector -->
+        <div class="th-background"></div>
+        <div class="proizvodi">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam doloremque soluta reprehenderit ipsum. Reprehenderit libero, officiis deserunt iure totam expedita repudiandae error enim est sapiente placeat molestiae fugit voluptatum quam
+                odit. Asperiores sunt perspiciatis voluptas temporibus optio ea fugiat! Magnam ratione voluptate deleniti cupiditate labore debitis corporis quas atque eligendi?</p>
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer ">
+            <div class="logo ">
+                <img src="./images/hipex logo.jpg " alt="logo ">
+            </div>
+
+            <div class="company-adress ">
+                <p class="text-center ">Adresa: centa 1 bb, 73 110 Novo Goražde</p>
+                <p class="text-center ">Broj telefona: +387 58 430 474 ; +387 58 430 010</p>
+                <p class="text-center ">Fax: +387 58 430 198</p>
+                <p class="text-center ">Mail: hip-ex@teol.net.</p>
+            </div>
+        </div>
     </div>
 
-    <!-- slideshow-->
-    <div class="slideshow-container">
-        <div class="slides fade">
-            <img src="./images/voce.jpg" style="width:100%" alt="1st slide ">
-            <div class="text "></div>
-        </div>
-        <div class="slides fade ">
-            <img src="./images/otkup-jagodičastog-voća.png " style="width:100% " alt="2nd slide ">
-            <div class="text "></div>
-        </div>
-        <div class="slides fade ">
-            <img src="./images/višnje.png " style="width:100% " alt="3rd slide ">
-            <div class="text "></div>
-        </div>
-    </div>
-    <!-- slideshow dots -->
-    <div class="dot-container" style="text-align:center ">
-        <span class="dot" onclick="currentSlide(1) "></span>
-        <span class="dot" onclick="currentSlide(2) "></span>
-        <span class="dot" onclick="currentSlide(3) "></span>
-    </div>
 
-
-
-
-
-    <!-- footer -->
-    <div class="footer ">
-        <div class="logo ">
-            <img src="./images/hipex logo.jpg " alt="logo ">
-        </div>
-
-        <div class="company-adress ">
-            <p class="text-center ">Adresa: centa 1 bb, 73 110 Novo Goražde</p>
-            <p class="text-center ">Broj telefona: +387 58 430 474 ; +387 58 430 010</p>
-            <p class="text-center ">Fax: +387 58 430 198</p>
-            <p class="text-center ">Mail: hip-ex@teol.net.</p>
-        </div>
-
-    </div>
     <script src="./slideshow.js "></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>

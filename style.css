@@ -10,9 +10,27 @@ body {
   font-size: 16px;
 }
 
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 600px 350px 420px 420px 420px 300px;
+      grid-template-rows: 600px 350px 420px 420px 420px 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .header-wrap {
   z-index: 2;
   position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
   opacity: 1;
 }
 
@@ -52,7 +70,7 @@ body {
   color: #ffffff;
   font-size: 1.3em;
   font-weight: 600;
-  text-shadow: 10px 10px 10px black;
+  text-shadow: 5px 5px 5px black;
   text-decoration: none;
 }
 
@@ -70,13 +88,15 @@ body {
 }
 
 .slideshow-container img {
-  height: 80vh;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .dot-container {
   z-index: 3;
   position: absolute;
-  top: 660px;
+  top: 500px;
   left: 0;
   right: 0;
   margin: 0;
@@ -124,8 +144,127 @@ body {
   }
 }
 
+.ripped-background {
+  position: relative;
+  height: 432px;
+  background: url("./images/ripped2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 1 / 3 / 4;
+  top: -46px;
+  z-index: 2;
+}
+
+.about-us-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 0 150px;
+  z-index: 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.about-us-home h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.about-us-home p {
+  font-size: 1.2rem;
+}
+
+.about-us-home .more-about-us {
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.about-us-home .more-about-us span {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.ice-background {
+  position: relative;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 3 / 1 / 5 / 4;
+  background: url("./images/pexels-neosiam-579216.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.proizvodi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 4 / 3;
+  position: relative;
+  z-index: 2;
+  padding: 0 150px;
+}
+
+.proizvodi h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.proizvodi p {
+  font-size: 1.2rem;
+}
+
+.th-background {
+  position: relative;
+  background-color: pink;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 4 / 1 / 5 / 4;
+  z-index: 3;
+}
+
 .footer {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 6 / 2 / 7 / 3;
   padding-bottom: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -137,7 +276,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 0;
 }
 
 .footer .company-details {
