@@ -15,8 +15,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
-  -ms-grid-rows: 600px 350px 420px 420px 420px 300px;
-      grid-template-rows: 600px 350px 420px 420px 420px 300px;
+  -ms-grid-rows: 600px 350px 420px 600px 500px 300px;
+      grid-template-rows: 600px 350px 420px 600px 500px 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -247,13 +247,38 @@ body {
 
 .th-background {
   position: relative;
-  background-color: pink;
+  background: url("./images/ripped2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 4 / 1 / 5 / 4;
   z-index: 3;
+}
+
+.nature {
+  position: relative;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 5 / 1 / 6 / 4;
+  background: url("./images/Jahorina1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer-background {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 6 / 1 / 7 / 4;
+  background: violet;
 }
 
 .footer {

@@ -12,7 +12,7 @@
             .main {
                 display: grid;
                 grid-template-columns: 1fr 2fr 1fr;
-                grid-template-rows: 600px 350px 420px 420px 420px 300px;
+                grid-template-rows: 600px 350px 420px 600px 500px 300px;
                 flex-direction: column;
             }
             
@@ -189,12 +189,30 @@
             // 4th sector
             .th-background {
                 position: relative;
-                background-color: pink;
+                background: url('./images/ripped2.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 50px;
                 grid-area: 4 / 1 / 5 / 4;
                 z-index: 3;
             }
             
+            // 5th sector
+            .nature {
+                position: relative;
+                grid-area: 5 / 1 / 6 / 4;
+                background: url('./images/Jahorina1.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            
             // footer
+            .footer-background {
+                grid-area: 6 / 1 / 7 / 4;
+                background: violet;
+            }
+            
             .footer {
                 display: flex;
                 grid-area: 6 / 2 / 7 / 3;
