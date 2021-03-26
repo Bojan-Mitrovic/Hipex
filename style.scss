@@ -21,9 +21,10 @@ body {
 // header
 .header-wrap {
     z-index: 2;
-    height: 6rem;
-    position: relative;
-    grid-area: 1 / 2 / 2 / 3;
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 4;
     opacity: 1;
     .header {
         display: flex;
@@ -302,7 +303,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 0 150px;
+    padding: 0 100px;
     z-index: 2;
     grid-area: 2 / 2 / 3 / 3;
     h2 {
@@ -354,7 +355,7 @@ body {
     // padding: 0 150px;
     h2 {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 400;
         padding-bottom: 15px;
     }
@@ -405,6 +406,9 @@ body {
     .icon img {
         width: 80px;
     }
+    .flake {
+        transform: translate(-200px, -200px);
+    }
     .flake-icon {
         transform: scale(1.3);
         .flake-text {
@@ -414,6 +418,7 @@ body {
     // key
     .key {
         top: 10px;
+        transform: translateY(-200px);
         .key-icon {
             transform: scale(1.6);
             bottom: 10px;
@@ -424,6 +429,7 @@ body {
     .hands {
         position: relative;
         top: 35px;
+        transform: translate(200px, -200px);
         .hands-icon {
             transform: scale(1.9);
             bottom: 10px;
@@ -433,7 +439,9 @@ body {
     // second row icons
     // cart icon
     .cart {
+        height: 300px;
         bottom: 40px;
+        transform: translate(-200px, 200px);
         .cart-icon {
             transform: scale(2);
             margin-bottom: 15px;
@@ -441,7 +449,9 @@ body {
     }
     // spray icon
     .spray {
+        height: 300px;
         bottom: 62px;
+        transform: translateY(200px);
         .spray-icon {
             transform: scale(1.5);
             margin-bottom: 10px;
@@ -449,11 +459,61 @@ body {
     }
     // cloud icon
     .cloud {
+        height: 300px;
+        transform: translate(200px, 200px);
         bottom: 50px;
         .cloud-icon {
             transform: scale(1.5);
         }
     }
+}
+
+// observer properties
+.header-scrolled {
+    background: rgb(160, 160, 160);
+    box-shadow: 0 3px 20px rgba(black, 0.5);
+    z-index: 5;
+    opacity: 0.5;
+}
+
+.flake,
+.key,
+.hands,
+.cart,
+.spray,
+.cloud {
+    transition: opacity 500ms ease-in, transform 1s ease-in;
+    opacity: 0;
+}
+
+.flake.appear {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.key.appear {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hands.appear {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.cart.appear {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.spray.appear {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cloud.appear {
+    transform: translate(0);
+    opacity: 1;
 }
 
 // 5th sector
