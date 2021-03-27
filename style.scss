@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// 1. manual slides
+// 2.Map when display changes
+// 3.icons sliding in at the same time
+// 4. header on scroll change color
 * {
     padding: 0;
     margin: 0;
@@ -42,7 +46,7 @@ body {
                 margin: 0;
                 list-style-type: none;
                 li {
-                    transition: 0.5s;
+                    transition: 0.8s;
                     &:hover {
                         transform: scale(1.2);
                         margin-right: 10px;
@@ -397,6 +401,9 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
+        &:hover {
+            transform: scale(1.2);
+        }
         p {
             font-size: 1.4rem;
             text-align: center;
@@ -405,6 +412,7 @@ body {
     }
     .icon img {
         width: 80px;
+        cursor: pointer;
     }
     .flake {
         transform: translate(-200px, -200px);
@@ -472,8 +480,8 @@ body {
 .header-scrolled {
     background: rgb(160, 160, 160);
     box-shadow: 0 3px 20px rgba(black, 0.5);
-    z-index: 5;
-    opacity: 0.5;
+    z-index: 10;
+    opacity: 0.8;
 }
 
 .flake,
@@ -524,12 +532,36 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    .ba1,
+    .ba2 {
+        position: relative;
+        grid-area: 5 / 2 / 6 / 3;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    }
+    .ba1 {
+        z-index: 2;
+        position: relative;
+        opacity: 0.5;
+    }
+    .ba2 {
+        z-index: 3;
+        position: absolute;
+        bottom: 30px;
+        left: 33.6%;
+    }
 }
 
 // footer
 .footer-background {
     grid-area: 6 / 1 / 7 / 4;
-    background: violet;
+    background: #242622;
+    // box-shadow: 0px -10px 10px #242622;
+    // padding-top: 10px;
+    // margin-top: 10px;
 }
 
 .footer {
@@ -539,6 +571,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .logo {
+        margin-bottom: 1rem;
+    }
     // bottom: 0;
     .company-details {
         display: flex;
@@ -546,7 +581,8 @@ body {
         justify-content: center;
     }
     p {
-        margin-bottom: 0;
+        color: white;
+        margin-bottom: 0.5rem;
     }
 }
 
