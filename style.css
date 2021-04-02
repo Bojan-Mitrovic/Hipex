@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +9,8 @@
 
 body {
   font-size: 16px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .main {
@@ -75,13 +76,13 @@ body {
 .header-wrap .header .nav-bar ul li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .header-wrap .header .nav-bar ul a {
   color: #ffffff;
-  font-size: 1.6rem;
-  font-family: 'Bree Serif', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
   text-shadow: 2px 3px 20px black;
   text-decoration: none;
 }
@@ -729,10 +730,10 @@ body {
 .about-us-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 0.7fr 1fr 1.3fr 0.4fr;
-      grid-template-rows: 1fr 0.7fr 1fr 1.3fr 0.4fr;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 1fr 0.5fr 1fr 1fr 1.2fr 0.4fr;
+      grid-template-rows: 1fr 0.5fr 1fr 1fr 1.2fr 0.4fr;
+  -ms-grid-columns: 1fr 3.5fr 1fr;
+      grid-template-columns: 1fr 3.5fr 1fr;
 }
 
 .header-intro {
@@ -746,7 +747,7 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
   background-attachment: fixed;
-  height: 600px;
+  max-height: 600px;
   -webkit-box-shadow: 0px 5px 10px gray;
           box-shadow: 0px 5px 10px gray;
 }
@@ -760,8 +761,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  top: 50%;
-  width: 350px;
+  top: 43%;
+  width: 380px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -769,90 +770,167 @@ body {
 .header-intro .about-us-headline h1 {
   font-size: 4.5rem;
   letter-spacing: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.about-us-first-text {
+.intro-about-us {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 2 / 2 / 3 / 3;
-  margin: 50px 10px;
+  padding: 80px 0;
 }
 
-.about-us-first-text p {
-  font-size: 1.3rem;
+.intro-about-us p {
+  font-size: 1.8rem;
   text-align: center;
+  font-weight: 300;
+  padding: 0 80px 20px 80px;
 }
 
-.about-us-second-part {
+.map-container {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 3 / 1 / 4 / 4;
-  background: url("./images/Drina kod Višegrada.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-box-shadow: 0px 5px 10px gray;
-          box-shadow: 0px 5px 10px gray;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 4 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 60px;
 }
 
-.about-us-second-part .about-us-second-text {
-  height: 100%;
-  width: 350px;
-  background: #98b8fb;
-  opacity: 0.8;
-  line-height: 2.3rem;
-  margin-left: 300px;
+.map-container .map img {
+  width: 550px;
 }
 
-.about-us-second-part .about-us-second-text p {
+.map-container .map-text {
   font-size: 1.3rem;
-  text-align: center;
-  padding: 20px 5px;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+.map-container .map-text h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 
 .storage {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 4 / 1 / 5 / 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 2 / 5 / 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 80px 400px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 50px 0px;
+  max-height: 600px;
 }
 
 .storage .storage-img {
-  -webkit-box-shadow: 3px 3px 10px gray;
-          box-shadow: 3px 3px 10px gray;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .storage .storage-img img {
-  max-height: 500px;
+  width: 560px;
 }
 
 .storage .storage-text {
-  margin-left: 50px;
+  padding-right: 100px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.storage .storage-text h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 
 .storage .storage-text p {
   font-size: 1.3rem;
-  text-align: center;
+  font-weight: 300;
+}
+
+.line {
+  border-top: 2px solid black;
+}
+
+.title {
+  padding: 20px 0 30px 0;
+  text-transform: uppercase;
+}
+
+.title h3 {
+  font-weight: bold;
+}
+
+.customers-wrap {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 2 / 6 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.customers .service,
+.customers .product {
+  position: relative;
+  max-width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customers .service h3,
+.customers .product h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+}
+
+.customers .service img,
+.customers .product img {
+  width: 580px;
+}
+
+.customers p {
+  font-size: 1.1rem;
 }
 
 .about-us-footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  grid-area: 5 / 1 / 6 / 4;
+  grid-area: 6 / 1 / 7 / 4;
   background: #242622;
 }
 /*# sourceMappingURL=style.css.map */
