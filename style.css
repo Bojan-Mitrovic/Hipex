@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
@@ -20,8 +19,8 @@ body {
       grid-template-columns: 1fr 2fr 1fr;
   -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
-  -ms-grid-rows: 600px 350px 400px 600px 500px 300px;
-      grid-template-rows: 600px 350px 400px 600px 500px 300px;
+  -ms-grid-rows: 600px 450px 400px 600px 500px 300px;
+      grid-template-rows: 600px 450px 400px 600px 500px 300px;
 }
 
 .header-wrap {
@@ -94,8 +93,8 @@ body {
   position: absolute;
   margin: 0;
   z-index: 1;
-  -webkit-box-shadow: 0px 3px 10px gray;
-          box-shadow: 0px 3px 10px gray;
+  -webkit-box-shadow: 0px 2px 6px #b6b5b5;
+          box-shadow: 0px 2px 6px #b6b5b5;
 }
 
 .slideshow-container .slides {
@@ -162,7 +161,8 @@ body {
 .slide-in-text {
   color: white;
   letter-spacing: 0.2rem;
-  font-family: 'Bree Serif', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -384,12 +384,12 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 3 / 1 / 4 / 4;
-  background: url("./images/šumsko voće (4).png");
+  background: url("./images/devin-rajaram-X5ChCOu8CQg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  -webkit-box-shadow: 0px 4px 10px grey;
-          box-shadow: 0px 4px 10px grey;
+  -webkit-box-shadow: 0px 2px 6px #b3b3b3;
+          box-shadow: 0px 2px 6px #b3b3b3;
 }
 
 .citat {
@@ -431,6 +431,14 @@ body {
   right: 100px;
 }
 
+.icons-wrap {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 4 / 1 / 5 / 4;
+}
+
 .icons-container {
   display: -ms-grid;
   display: grid;
@@ -439,6 +447,8 @@ body {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   position: relative;
+  height: 500px;
+  margin: 50px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -451,8 +461,6 @@ body {
   -ms-grid-column-span: 3;
   grid-area: 4 / 1 / 5 / 4;
   padding: 0 400px;
-  background: white;
-  margin-top: 50px;
 }
 
 .icons-container .icon-wrap {
@@ -463,6 +471,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-height: 250px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
@@ -501,12 +510,7 @@ body {
           transform: scale(1.3);
 }
 
-.icons-container .flake-icon .flake-text {
-  top: 10px;
-}
-
 .icons-container .key {
-  top: 10px;
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
 }
@@ -514,13 +518,15 @@ body {
 .icons-container .key .key-icon {
   -webkit-transform: scale(1.6);
           transform: scale(1.6);
-  bottom: 10px;
   position: relative;
+}
+
+.icons-container .key .key-text {
+  padding-top: 15px;
 }
 
 .icons-container .hands {
   position: relative;
-  top: 35px;
   -webkit-transform: translate(200px, -50px);
           transform: translate(200px, -50px);
 }
@@ -528,26 +534,30 @@ body {
 .icons-container .hands .hands-icon {
   -webkit-transform: scale(1.9);
           transform: scale(1.9);
-  bottom: 10px;
+  padding-top: 30px;
   position: relative;
 }
 
+.icons-container .hands .hands-text {
+  padding-top: 30px;
+}
+
 .icons-container .cart {
-  height: 300px;
-  bottom: 40px;
   -webkit-transform: translate(-200px, 100px);
           transform: translate(-200px, 100px);
+  padding-top: 40px;
 }
 
 .icons-container .cart .cart-icon {
   -webkit-transform: scale(2);
           transform: scale(2);
-  margin-bottom: 15px;
+}
+
+.icons-container .cart .cart-text {
+  padding-top: 20px;
 }
 
 .icons-container .spray {
-  height: 300px;
-  bottom: 62px;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
 }
@@ -559,10 +569,9 @@ body {
 }
 
 .icons-container .cloud {
-  height: 300px;
   -webkit-transform: translate(200px, 100px);
           transform: translate(200px, 100px);
-  bottom: 50px;
+  padding-top: 20px;
 }
 
 .icons-container .cloud .cloud-icon {
