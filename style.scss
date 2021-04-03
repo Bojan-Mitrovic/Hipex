@@ -330,7 +330,7 @@ body {
 .ice-background {
     position: relative;
     grid-area: 3 / 1 / 4 / 4;
-    background: url('./images/devin-rajaram-X5ChCOu8CQg-unsplash.jpg');
+    background: url('./images/led1.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -342,7 +342,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 3 / 1 / 4 / 4;
     position: relative;
     z-index: 2;
     color: white;
@@ -382,7 +382,7 @@ body {
     .icon-wrap {
         display: flex;
         flex-direction: column;
-        max-height: 250px;
+        min-height: 250px;
         justify-content: space-around;
         position: relative;
         justify-content: center;
@@ -394,7 +394,7 @@ body {
         p {
             font-size: 1.4rem;
             text-align: center;
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
     }
     .icon img {
@@ -726,4 +726,163 @@ body {
 .about-us-footer {
     grid-area: 6 / 1 / 7 / 4;
     background: #242622;
+}
+
+// =============================== service & produce =======================================
+.produce-container {
+    display: grid;
+    grid-template-rows: 1fr 0.3fr repeat(3, 0.8fr) 0.4fr;
+    grid-template-columns: 1fr 1.5fr 3px 1.5fr 1fr;
+}
+
+.header-background {
+    grid-area: 1 / 1 / 2 / 6;
+    min-height: 600px;
+    background: url('./images/proizvodiiii.png') no-repeat center center / cover;
+}
+
+.service-intro {
+    grid-area: 2 / 2 / 3 / 5;
+    padding: 50px;
+    p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+// footer
+.footer-background-produce {
+    grid-area: 6 / 1 / 7 / 6;
+    background: rgb(68, 67, 67);
+}
+
+// vertical line
+.vertical-line {
+    grid-area: 3 / 3 / 6 / 4;
+    border-right: 3px solid black;
+    width: 3px;
+    margin: 50px 0;
+}
+
+// icons
+.services-icon-container {
+    grid-area: 3 / 2 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    .icons-title {
+        h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    .service-icon-wrap {
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+        justify-content: space-around;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.8s;
+        &:hover {
+            transform: scale(1.2);
+        }
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+    .service-icon img {
+        width: 80px;
+        cursor: pointer;
+    }
+    .service-flake {}
+    .service-flake-icon {
+        transform: scale(1.3);
+        .service-flake-text {}
+    }
+    // key
+    .service-key {
+        .service-key-icon {
+            transform: scale(1.6);
+            position: relative;
+        }
+        .service-key-text {
+            padding-top: 15px;
+        }
+    }
+    // hands
+    .service-hands {
+        position: relative;
+        .service-hands-icon {
+            transform: scale(1.9);
+            padding-top: 30px;
+            position: relative;
+        }
+        .service-hands-text {
+            padding-top: 30px;
+        }
+    }
+    // second row icons
+    // cart icon
+    .service-cart {
+        padding-top: 40px;
+        .service-cart-icon {
+            transform: scale(2);
+        }
+        .service-cart-text {
+            padding-top: 20px;
+        }
+    }
+    // spray icon
+    .service-spray {
+        .service-spray-icon {
+            transform: scale(1.5);
+            margin-bottom: 10px;
+        }
+    }
+    // cloud icon
+    .service-cloud {
+        padding-top: 20px;
+        .service-cloud-icon {
+            transform: scale(1.5);
+        }
+    }
+}
+
+// right side / produces
+.fruit-container {
+    grid-area: 3 / 4 / 6 / 5;
+    padding-top: 50px;
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .frozen-fruits {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .fruit-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 250px;
+            .fruit-icon {
+                img {
+                    width: 130px;
+                }
+            }
+            p {
+                font-size: 1.4rem;
+                text-align: center;
+                margin-top: 2rem;
+            }
+        }
+    }
 }

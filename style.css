@@ -384,7 +384,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 3 / 1 / 4 / 4;
-  background: url("./images/devin-rajaram-X5ChCOu8CQg-unsplash.jpg");
+  background: url("./images/led1.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -408,9 +408,9 @@ body {
           align-items: center;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 2 / 4 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 3 / 1 / 4 / 4;
   position: relative;
   z-index: 2;
   color: white;
@@ -471,7 +471,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 250px;
+  min-height: 250px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
@@ -492,7 +492,7 @@ body {
 .icons-container .icon-wrap p {
   font-size: 1.4rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .icons-container .icon img {
@@ -941,5 +941,236 @@ body {
   -ms-grid-column-span: 3;
   grid-area: 6 / 1 / 7 / 4;
   background: #242622;
+}
+
+.produce-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 0.3fr (0.8fr)[3] 0.4fr;
+      grid-template-rows: 1fr 0.3fr repeat(3, 0.8fr) 0.4fr;
+  -ms-grid-columns: 1fr 1.5fr 3px 1.5fr 1fr;
+      grid-template-columns: 1fr 1.5fr 3px 1.5fr 1fr;
+}
+
+.header-background {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 1 / 1 / 2 / 6;
+  min-height: 600px;
+  background: url("./images/proizvodiiii.png") no-repeat center center/cover;
+}
+
+.service-intro {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 2 / 3 / 5;
+  padding: 50px;
+}
+
+.service-intro p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.footer-background-produce {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 6 / 1 / 7 / 6;
+  background: #444343;
+}
+
+.vertical-line {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 3 / 6 / 4;
+  border-right: 3px solid black;
+  width: 3px;
+  margin: 50px 0;
+}
+
+.services-icon-container {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 6 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.services-icon-container .icons-title h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.services-icon-container .service-icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 250px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.services-icon-container .service-icon-wrap:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.services-icon-container .service-icon-wrap p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.services-icon-container .service-icon img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.services-icon-container .service-flake-icon {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.services-icon-container .service-key .service-key-icon {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  position: relative;
+}
+
+.services-icon-container .service-key .service-key-text {
+  padding-top: 15px;
+}
+
+.services-icon-container .service-hands {
+  position: relative;
+}
+
+.services-icon-container .service-hands .service-hands-icon {
+  -webkit-transform: scale(1.9);
+          transform: scale(1.9);
+  padding-top: 30px;
+  position: relative;
+}
+
+.services-icon-container .service-hands .service-hands-text {
+  padding-top: 30px;
+}
+
+.services-icon-container .service-cart {
+  padding-top: 40px;
+}
+
+.services-icon-container .service-cart .service-cart-icon {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.services-icon-container .service-cart .service-cart-text {
+  padding-top: 20px;
+}
+
+.services-icon-container .service-spray .service-spray-icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-bottom: 10px;
+}
+
+.services-icon-container .service-cloud {
+  padding-top: 20px;
+}
+
+.services-icon-container .service-cloud .service-cloud-icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.fruit-container {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 4 / 6 / 5;
+  padding-top: 50px;
+}
+
+.fruit-container h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.fruit-container .frozen-fruits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fruit-container .frozen-fruits .fruit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 250px;
+}
+
+.fruit-container .frozen-fruits .fruit-container .fruit-icon img {
+  width: 130px;
+}
+
+.fruit-container .frozen-fruits .fruit-container p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
