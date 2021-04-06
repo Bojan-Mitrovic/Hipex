@@ -11,6 +11,8 @@ function currentSlide(n) {
     var dots = document.querySelectorAll('.dot');
 
 
+
+
     switch (n) {
         case 1:
             slides[0].style.display = 'block';

@@ -1,14 +1,16 @@
 const header = document.querySelector('.header-wrap');
+const headerAboutUs = document.querySelector('.header-intro');
 const slidesContainer = document.querySelector('.slideshow-container');
 const sliders = document.querySelectorAll('.icon-wrap');
 
 
-// header change style when leaves slide container
+
 const headerOptions = {
     rootMargin: '-100px 0px 0px 0px',
 }
 
-const fixedHeader = new IntersectionObserver(function(entries, fixedHeader) {
+// adding background to header when leave slides 
+const fixedHeader = new IntersectionObserver(function(entries) {
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
@@ -21,6 +23,8 @@ const fixedHeader = new IntersectionObserver(function(entries, fixedHeader) {
 }, headerOptions);
 
 fixedHeader.observe(slidesContainer);
+
+
 
 
 // icons sliding inside 
