@@ -1,7 +1,7 @@
 const headerAboutUs = document.querySelector('.header-intro');
 const header = document.querySelector('.header');
 const headerOptions = {
-        rootMargin: '-100px 0px 0px 0px',
+        rootMargin: '0px',
     }
     // adding background to header when leave about us intro
 const headerBackground = new IntersectionObserver(function(entries) {

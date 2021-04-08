@@ -6,7 +6,7 @@ const sliders = document.querySelectorAll('.icon-wrap');
 
 
 const headerOptions = {
-    rootMargin: '-100px 0px 0px 0px',
+    rootMargin: '-60px 0px 0px 0px',
 }
 
 // adding background to header when leave slides 

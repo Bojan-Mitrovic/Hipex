@@ -1,11 +1,11 @@
-var i = 2;
-var slideIndex = 0;
+var i = 1;
+var slideIndex = 2;
 
 
 
 
 
-
+// function for dot commands
 function currentSlide(n) {
     var slides = document.querySelectorAll('.slides');
     var dots = document.querySelectorAll('.dot');
