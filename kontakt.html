@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/091fa07559.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 
     <title>HI - PEX</title>
@@ -35,71 +36,56 @@
         <!-- header image -->
         <div class="contact-img">
         </div>
-        <!-- company contact details -->
-        <div class="company-informations">
-            <div class="contact-logo ">
-                <img src="./images/hipex logo.jpg " alt="logo ">
+        <div class="contact-body">
+            <!-- company contact details -->
+            <div class="company-informations">
+                <div class="contact-logo ">
+                    <img src="./images/hipex logo.jpg " alt="logo ">
+                </div>
+                <div class="company-details">
+                    <p class="text-center">Adresa: centa 1 bb, 73 110<br> Novo Goražde</p>
+                    <p class="text-center">Broj telefona: +387 58 430 474;<br>+387 58 430 010</p>
+                    <p class="text-center">Fax: +387 58 430 198</p>
+                    <p class="text-center">Mail: <a id="mail" href="mailto:hip-ex@teol.net.">hip-ex@teol.net.</a></p>
+                </div>
             </div>
 
-            <div class="company-details">
-                <p class="text-center">Adresa: centa 1 bb, 73 110 Novo Goražde</p>
-                <p class="text-center">Broj telefona: +387 58 430 474 ; +387 58 430 010</p>
-                <p class="text-center">Fax: +387 58 430 198</p>
-                <p class="text-center">Mail: <a id="mail" href="mailto:hip-ex@teol.net.">hip-ex@teol.net.</a></p>
-                <i class="fas fa-phone-square-alt"></i>
+            <div class="customers-form-wrap">
+                <form action="" method="post">
+                    <!-- ime -->
+                    <div class="input-form">
+                        <i class="fas fa-user fa-2x"></i>
+                        <input type="text" name="name" id="name" placeholder="Ime i prezime" required>
 
+                    </div>
+                    <!-- mail -->
+                    <div class="input-form">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    </div>
+                    <!-- phone -->
+                    <div class="input-form">
+                        <i class="fas fa-phone-alt fa-2x"></i>
+                        <input type="number" name="phone" id="phone" placeholder="Telefon" required>
+                    </div>
+                    <!-- message -->
+                    <div class="text-form">
+                        <i class="fas fa-pen fa-lg"></i>
+                        <textarea id="text" name="text" rows="6" cols="48" autocapitalize="sentences" placeholder="Poruka" required></textarea>
+                    </div>
+                    <!-- submit -->
+                    <div class="submit-wrap">
+                        <input type="submit" value="Pošalji">
+                    </div>
+                </form>
             </div>
         </div>
-
-        <div class="customers-form-wrap">
-            <form action="" method="post">
-                <!-- ime -->
-                <div class="form-example">
-                    <label for="name">Ime i prezime: </label>
-                    <input type="text" name="name" id="name" placeholder="Ime i prezime">
-                </div>
-                <!-- mail -->
-                <div class="form-example">
-                    <label for="email">E-mail: </label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                </div>
-                <!-- phone -->
-                <div class="form-example">
-                    <label for="phone">Telefon: </label>
-                    <input type="number" name="phone" id="phone" placeholder="Telefon">
-                </div>
-                <!-- subject -->
-                <div class="form-example">
-                    <label for="subject">Naslov: </label>
-                    <input type="text" name="subject" id="subject" placeholder="Naslov">
-                </div>
-                <!-- message -->
-                <div class="form-example">
-                    <label for="text">Poruka: </label>
-                    <textarea id="text" name="text" rows="6" cols="48" placeholder="Naslov">
-                    </textarea>
-                </div>
-                <div class="form-example">
-                    <input type="submit" value="Pošalji">
-                </div>
-            </form>
-        </div>
-
-
-
-
-
-
-
         <!-- footer -->
         <div class="contact-footer">
-            <div class="footer-background">
-            </div>
             <div class="footer ">
                 <div class="logo ">
                     <img src="./images/hipex logo.jpg " alt="logo ">
                 </div>
-
                 <div class="company-adress">
                     <p class="text-center">Adresa: centa 1 bb, 73 110 Novo Goražde</p>
                     <p class="text-center">Broj telefona: +387 58 430 474 ; +387 58 430 010</p>
