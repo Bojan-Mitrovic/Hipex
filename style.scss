@@ -399,15 +399,15 @@ body {
         cursor: pointer;
     }
     // cart icon
-    .cart {
+    .raspeberry {
         transform: translate(-200px, -50px);
     }
-    // key
-    .key {
+    // palett
+    .palett {
         transform: translateY(-50px);
     }
-    // hands
-    .hands {
+    // truck
+    .truck {
         position: relative;
         // top: 35px;
         transform: translate(200px, -50px);
@@ -422,8 +422,8 @@ body {
         // bottom: 62px;
         transform: translateY(50px);
     }
-    // cloud icon
-    .cloud {
+    // hands icon
+    .hands {
         transform: translate(200px, 50px);
     }
 }
@@ -510,7 +510,7 @@ body {
 // ====================================== O NAMA ==============================================
 .about-us-container {
     display: grid;
-    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 0.5fr 0.4fr;
     grid-template-columns: 1fr 3.5fr 1fr;
 }
 
@@ -630,6 +630,30 @@ body {
     }
 }
 
+// counter
+.counters {
+    display: grid;
+    grid-area: 6 / 2 / 7 / 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border-top: 1px solid #000;
+    .counter-container {
+        display: flex;
+        justify-content: center;
+        .counter {
+            padding-right: 1rem;
+        }
+    }
+    h4 {
+        padding-top: 1rem;
+        text-transform: uppercase;
+    }
+}
+
 // customers
 .line {
     border-top: 2px solid black;
@@ -637,7 +661,7 @@ body {
 
 //about us footer
 .about-us-footer {
-    grid-area: 6 / 1 / 7 / 4;
+    grid-area: 7 / 1 / 8 / 4;
     background: #173d69;
     display: flex;
     justify-content: center;
@@ -847,6 +871,17 @@ body {
     background-position: center;
     height: 600px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    h1 {
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        letter-spacing: 0.5rem;
+        font-weight: 700;
+        color: white;
+    }
 }
 
 // contact-body
@@ -974,3 +1009,6 @@ body {
         }
     }
 }
+
+// ============================================== small devices ====================================================
+@media screen and (max-width: 800px) {}

@@ -495,17 +495,17 @@ body {
   cursor: pointer;
 }
 
-.icons-container .cart {
+.icons-container .raspeberry {
   -webkit-transform: translate(-200px, -50px);
           transform: translate(-200px, -50px);
 }
 
-.icons-container .key {
+.icons-container .palett {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
 }
 
-.icons-container .hands {
+.icons-container .truck {
   position: relative;
   -webkit-transform: translate(200px, -50px);
           transform: translate(200px, -50px);
@@ -521,7 +521,7 @@ body {
           transform: translateY(50px);
 }
 
-.icons-container .cloud {
+.icons-container .hands {
   -webkit-transform: translate(200px, 50px);
           transform: translate(200px, 50px);
 }
@@ -648,8 +648,8 @@ body {
 .about-us-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 0.5fr 1fr 1fr 1fr 0.4fr;
-      grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 0.4fr;
+  -ms-grid-rows: 1fr 0.5fr 1fr 1fr 1fr 0.5fr 0.4fr;
+      grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 0.5fr 0.4fr;
   -ms-grid-columns: 1fr 3.5fr 1fr;
       grid-template-columns: 1fr 3.5fr 1fr;
 }
@@ -820,16 +820,52 @@ body {
   font-weight: 300;
 }
 
+.counters {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 6 / 2 / 7 / 3;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border-top: 1px solid #000;
+}
+
+.counters .counter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.counters .counter-container .counter {
+  padding-right: 1rem;
+}
+
+.counters h4 {
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
 .line {
   border-top: 2px solid black;
 }
 
 .about-us-footer {
-  -ms-grid-row: 6;
+  -ms-grid-row: 7;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  grid-area: 6 / 1 / 7 / 4;
+  grid-area: 7 / 1 / 8 / 4;
   background: #173d69;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1166,6 +1202,24 @@ body {
   background-position: center;
   height: 600px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-attachment: fixed;
+}
+
+.contact-img h1 {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  color: white;
 }
 
 .contact-body {
