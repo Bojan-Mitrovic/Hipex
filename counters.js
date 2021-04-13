@@ -1,5 +1,5 @@
 const counters = document.querySelectorAll('.counter');
-const speed = 500;
+const speed = 50;
 
 // for each counter number 
 counters.forEach(counter => {
@@ -18,7 +18,7 @@ counters.forEach(counter => {
 
             counter.innerText = Math.ceil(count + inc);
 
-            setTimeout(updateCount, 1);
+            setTimeout(updateCount, 30);
         } else {
             counter.innerText = target;
         }
