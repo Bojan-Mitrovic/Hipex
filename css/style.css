@@ -17,8 +17,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 3fr 1fr;
       grid-template-columns: 1fr 3fr 1fr;
-  -ms-grid-rows: 600px 400px 400px 600px 500px 300px;
-      grid-template-rows: 600px 400px 400px 600px 500px 300px;
+  -ms-grid-rows: 600px 400px 400px 600px 500px 250px;
+      grid-template-rows: 600px 400px 400px 600px 500px 250px;
 }
 
 .header-wrap {
@@ -39,6 +39,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 15px 200px;
+  height: 65px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -578,7 +579,7 @@ body {
   z-index: 2;
 }
 
-.home-footer-background {
+.home-footer {
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -586,21 +587,11 @@ body {
   grid-area: 6 / 1 / 7 / 4;
 }
 
-#mail {
-  color: white;
-}
-
-.home-footer {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 6 / 1 / 7 / 4;
   background: #173d69;
-  padding-bottom: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -611,19 +602,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
-.home-footer .logo {
+.footer .logo {
   margin-bottom: 1rem;
   width: 300px;
 }
 
-.home-footer .logo img {
+.footer .logo img {
   width: 100%;
   height: auto;
 }
 
-.home-footer .company-adress {
+.footer .company-adress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,9 +628,14 @@ body {
           justify-content: center;
 }
 
-.home-footer .company-adress p {
+.footer .company-adress p {
   color: white;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+#mail {
+  color: white;
 }
 
 .about-us-container {
@@ -720,13 +717,13 @@ body {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  -webkit-box-shadow: 2px 2px 5px black;
-          box-shadow: 2px 2px 5px black;
 }
 
 .malinjak-container .malinjak img {
   width: 560px;
   max-height: 500px;
+  -webkit-box-shadow: 0px 0px 10px gray;
+          box-shadow: 0px 0px 10px gray;
 }
 
 .malinjak-container .malinjak-text {
@@ -797,6 +794,8 @@ body {
 
 .storage .storage-img img {
   width: 560px;
+  -webkit-box-shadow: 0px 0px 10px gray;
+          box-shadow: 0px 0px 10px gray;
 }
 
 .storage .storage-text {
@@ -830,11 +829,28 @@ body {
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   text-align: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
   font-size: 2rem;
   font-weight: 500;
   border-top: 1px solid #000;
-  color: #1e90cf;
+}
+
+.counters .counter-wrap {
+  background: #173d69;
+  color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 340px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 340px;
 }
 
 .counters .counter-container {
@@ -869,47 +885,6 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 7 / 1 / 8 / 4;
-  background: #173d69;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.about-us-footer .logo {
-  margin: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.about-us-footer .logo img {
-  width: 300px;
-}
-
-.about-us-footer .company-adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.about-us-footer .company-adress p {
-  color: white;
-  margin-bottom: 0.5rem;
 }
 
 .produce-container {
@@ -1157,49 +1132,6 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 7 / 1 / 8 / 4;
-  background: #173d69;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.produce-footer .logo {
-  margin: 1rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 300px;
-}
-
-.produce-footer .logo img {
-  width: 100%;
-  height: auto;
-}
-
-.produce-footer .company-adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.produce-footer .company-adress p {
-  color: white;
-  margin-bottom: 0.5rem;
 }
 
 .contact-container {
@@ -1368,39 +1300,5 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: 3 / 1 / 4 / 5;
-  background: #173d69;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-footer .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-footer .footer img {
-  width: 250px;
-}
-
-.contact-footer .footer .company-adress {
-  color: white;
 }
 /*# sourceMappingURL=style.css.map */
