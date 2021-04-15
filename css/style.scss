@@ -31,6 +31,18 @@ body {
         height: 65px;
         justify-content: space-around;
         align-items: center;
+        &::before {
+            position: absolute;
+            height: 65px;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: black;
+            opacity: 0.4;
+            z-index: -1;
+        }
         .logo {
             width: 170px;
             display: block;
@@ -50,7 +62,6 @@ body {
                     transition: 0.8s;
                     &:hover {
                         transform: scale(1.2);
-                        margin-right: 15px;
                     }
                 }
                 a {
@@ -400,8 +411,6 @@ body {
     }
     // truck
     .truck {
-        position: relative;
-        // top: 35px;
         transform: translate(200px, -50px);
     }
     // second row icons
@@ -964,4 +973,100 @@ body {
 // footer
 .contact-footer {
     grid-area: 3 / 1 / 4 / 5;
+}
+
+// ========================================== mobile setup ================================================
+@media only screen and (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        // grid-template-rows: 1fr 1fr 0.6fr 1.4fr 1.4fr 0.4fr;
+        // grid-template-columns: repeat(2, 1fr);
+    }
+    // hide slide animations and header 
+    .slide-in-right,
+    .slide-in-top,
+    .scale-in-ver-top,
+    .header-wrap {
+        display: none;
+    }
+    .slideshow-container {
+        height: 250px;
+        width: 100%;
+        position: relative;
+        img {
+            height: 250px;
+        }
+    }
+    .dot-container {
+        top: 230px;
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 6px;
+        }
+    }
+    .about-us-home {
+        margin: 15px 0;
+        h2 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+            padding: 10px 5px;
+            margin: 0;
+        }
+    }
+    // home button 
+    .slides-btn {
+        width: 74px;
+        font-size: 0.4rem;
+    }
+    // citat 
+    .citat {
+        background: url('./images/led1.png');
+        background-attachment: fixed;
+        height: 140px;
+        box-shadow: 0 1px 4px grey;
+        h2 {
+            font-size: 1rem;
+        }
+        span {
+            font-size: 0.8rem;
+        }
+    }
+    //icons
+    .icons-container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0;
+        padding: 0 10px;
+        .icon-wrap {
+            transform: translate(0);
+            transition: none;
+            height: 170px;
+            padding-top: 25px;
+            &:hover {
+                transform: none;
+            }
+            img {
+                width: 70px;
+                height: 70px;
+            }
+            p {
+                font-size: 0.8rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    //map
+    .nature {
+        .ba1 {
+            img {
+                width: 220px;
+            }
+        }
+    }
 }
