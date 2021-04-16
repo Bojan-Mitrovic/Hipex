@@ -1,6 +1,5 @@
 const counters = document.querySelectorAll('.counter');
-const counterWrap = document.querySelector('.counters');
-// const counterWrap = document.querySelectorAll('.counter-wrap')
+const counterWrap = document.querySelectorAll('.counter-wrap');
 const speed = 50;
 
 // for each counter number 
@@ -9,16 +8,10 @@ const risingNumbers = () => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
-
             // counting spped rate
             const inc = target / speed;
 
-
-            console.log(inc);
-            console.log(count);
-
             if (count < target) {
-
                 counter.innerText = Math.ceil(count + inc);
 
                 setTimeout(updateCount, 30);
@@ -49,4 +42,6 @@ const countingUp = new IntersectionObserver(function(entries, countingUp) {
 
 }, counterOptions);
 
-countingUp.observe(counterWrap);
+counterWrap.forEach(wrap => {
+    countingUp.observe(wrap);
+})

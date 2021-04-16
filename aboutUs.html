@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/091fa07559.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 
@@ -33,8 +34,35 @@
                 </div>
             </div>
         </div>
-        <div class="header-intro">
+        <!-- mobile header  -->
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <a href="index.html">
+                    <img src="./css/images/hipex logo.png" alt="">
+                </a>
+            </div>
+            <div class="mobile-nav-bar-container">
+                <!-- open nav-bar  -->
+                <div class="menu-bar-open">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <!-- close nav-bar  -->
+                <div class="menu-bar-close">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
 
+                <div class="mobile-nav-bar">
+                    <ul>
+                        <li><a href="index.html">POČETNA</a></li>
+                        <li><a href="aboutUs.html">O NAMA</a></li>
+                        <li><a href="proizvodi.html">PROIZVODI I USLUGE</a></li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- intro part  -->
+        <div class="header-intro">
             <div class="about-us-headline">
                 <h1>o nama</h1>
             </div>
@@ -125,6 +153,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./JavaScript/mobile-header.js"></script>
     <script src="./JavaScript/counters.js"></script>
     <script src="/JavaScript/aboutUsObserver.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
