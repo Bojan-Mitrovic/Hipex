@@ -3,6 +3,7 @@ const logo = document.querySelector('.mobile-logo');
 const open = document.querySelector('.menu-bar-open');
 const close = document.querySelector('.menu-bar-close');
 const slideControls = document.querySelector('.dot-container');
+const logoOpen = document.querySelector('.logo-open-btn');
 
 // showing navBar 
 open.addEventListener('click', function() {
@@ -11,7 +12,7 @@ open.addEventListener('click', function() {
     open.style.display = 'none';
     close.style.display = 'block';
     logo.style.display = 'none';
-    slideControls.style.display = 'none'
+    slideControls.style.display = 'none';
 });
 
 // closing navBar 

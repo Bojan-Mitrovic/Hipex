@@ -1,6 +1,6 @@
 const counters = document.querySelectorAll('.counter');
 const counterWrap = document.querySelectorAll('.counter-wrap');
-const speed = 50;
+const speed = 100;
 
 // for each counter number 
 const risingNumbers = () => {

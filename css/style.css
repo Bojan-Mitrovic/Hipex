@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -61,7 +62,7 @@ body {
 }
 
 .header-wrap .header .logo {
-  width: 170px;
+  width: 230px;
   display: block;
 }
 
@@ -435,7 +436,7 @@ body {
   -ms-grid-column-span: 3;
   grid-area: 3 / 1 / 4 / 4;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .citat h2 {
@@ -446,9 +447,10 @@ body {
 }
 
 .citat span {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  font-family: 'Barlow', sans-serif;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 3px;
 }
 
@@ -742,8 +744,8 @@ body {
 .malinjak-container .malinjak img {
   width: 560px;
   max-height: 500px;
-  -webkit-box-shadow: 0px 0px 10px gray;
-          box-shadow: 0px 0px 10px gray;
+  -webkit-box-shadow: 2px 2px 2px gray;
+          box-shadow: 2px 2px 2px gray;
 }
 
 .malinjak-container .malinjak-text {
@@ -1138,9 +1140,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.bottom-text .line {
+  width: 100%;
 }
 
 .bottom-text p {
@@ -1235,6 +1245,19 @@ body {
 
 .company-informations .company-details p a {
   color: black !important;
+}
+
+.customers-form-wrap .message-sent {
+  font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
+  background-color: #6098d1;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+  padding: 8px;
+  display: none;
 }
 
 .customers-form-wrap form {
@@ -1352,8 +1375,20 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    position: fixed;
+    z-index: 3;
+  }
+  .mobile-header::before {
+    content: '';
     position: absolute;
-    z-index: 2;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: black;
+    opacity: 0.7;
   }
   .mobile-header .mobile-logo {
     display: block;
@@ -1367,6 +1402,7 @@ body {
   .mobile-header .menu-bar-open {
     position: absolute;
     display: block;
+    color: white;
     z-index: 2;
     top: 7px;
     left: 12px;
@@ -1388,17 +1424,8 @@ body {
     display: none;
     width: 100%;
     text-align: center;
-  }
-  .mobile-header .mobile-nav-bar-container .mobile-nav-bar::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.6;
     background: black;
-    z-index: -1;
+    height: 250px;
   }
   .mobile-header .mobile-nav-bar-container .mobile-nav-bar li {
     padding-top: 21px;
@@ -1454,7 +1481,7 @@ body {
   }
   .citat span {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
   }
   .icons-container {
     -ms-grid-rows: (1fr)[3];
@@ -1499,6 +1526,9 @@ body {
     width: 200px;
     margin: 20px;
   }
+  .footer .company-adress {
+    font-size: 0.8rem;
+  }
   .about-us-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1513,7 +1543,7 @@ body {
     background-attachment: unset;
   }
   .about-us-container .header-intro h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .about-us-container .intro-about-us {
     padding: 30px 10px;
@@ -1767,7 +1797,7 @@ body {
             flex-direction: column;
   }
   .contact-container .contact-img {
-    height: 250px;
+    height: 230px;
     background-attachment: unset;
     -webkit-box-shadow: 0 1px 4px grey;
             box-shadow: 0 1px 4px grey;
@@ -1798,27 +1828,38 @@ body {
     margin-top: 30px;
   }
   .contact-container .contact-body .company-informations .contact-logo {
-    width: 250px;
+    width: 220px;
     margin: 15px 0;
+  }
+  .contact-container .contact-body .company-informations p {
+    font-size: 1rem;
   }
   .contact-container .contact-body .customers-form-wrap {
     margin: 25px;
     padding: 0 15px;
   }
   .contact-container .contact-body .customers-form-wrap form {
-    width: 340px;
+    width: 280px;
   }
   .contact-container .contact-body .customers-form-wrap .input-form {
-    width: 340px;
+    width: 280px;
+    height: 40px;
+  }
+  .contact-container .contact-body .customers-form-wrap .input-form i {
+    padding: 3px 0 3px 10px;
   }
   .contact-container .contact-body .customers-form-wrap .input-form input {
-    width: 280px;
+    width: 220px;
+    height: 35px;
+    padding: 4px 0 4px 0;
   }
   .contact-container .contact-body .customers-form-wrap .text-form {
-    width: 340px;
+    width: 280px;
+    height: 140px;
   }
   .contact-container .contact-body .customers-form-wrap .text-form textarea {
-    width: 280px;
+    width: 220px;
+    height: 130px;
   }
 }
 /*# sourceMappingURL=style.css.map */
