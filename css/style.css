@@ -623,7 +623,7 @@ body {
 }
 
 .footer .logo {
-  margin-bottom: 1rem;
+  margin: 1rem;
   width: 300px;
 }
 
@@ -744,8 +744,8 @@ body {
 .malinjak-container .malinjak img {
   width: 560px;
   max-height: 500px;
-  -webkit-box-shadow: 2px 2px 2px gray;
-          box-shadow: 2px 2px 2px gray;
+  -webkit-box-shadow: 0px 2px 0px gray;
+          box-shadow: 0px 2px 0px gray;
 }
 
 .malinjak-container .malinjak-text {
@@ -1270,8 +1270,8 @@ body {
   display: flex;
   width: 450px;
   height: 50px;
-  border: 1px solid black;
-  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px #c7c7c7;
+          box-shadow: 4px 4px 10px #c7c7c7;
   margin-bottom: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1300,8 +1300,8 @@ body {
 .text-form {
   width: 450px;
   height: 200px;
-  border: 1px solid black;
-  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px #c7c7c7;
+          box-shadow: 4px 4px 10px #c7c7c7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1309,18 +1309,19 @@ body {
 }
 
 .text-form i {
-  padding: 12px 5px 0 12px;
+  padding: 8px 0 8px 20px;
   color: gray;
+  height: 45px;
 }
 
 .text-form textarea {
-  width: 395px;
-  height: 198px;
+  width: 380px;
+  height: 190px;
+  padding: 6px 0 0 14px;
   border: none;
   outline: none;
   resize: none;
   font-size: 1.2rem;
-  padding: 6px;
 }
 
 .submit-wrap {
@@ -1518,6 +1519,7 @@ body {
   }
   .nature {
     height: 380px;
+    background-attachment: unset;
   }
   .nature .ba1 img {
     width: 280px;
@@ -1559,7 +1561,7 @@ body {
     margin: 0 20px;
   }
   .about-us-container .malinjak-container {
-    padding: 20px 0px;
+    padding: 40px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1568,11 +1570,11 @@ body {
   }
   .about-us-container .malinjak-container img {
     width: 100%;
-    -webkit-box-shadow: 0 1px 2px grey;
-            box-shadow: 0 1px 2px grey;
+    -webkit-box-shadow: 0 1px 0px grey;
+            box-shadow: 0 1px 0px grey;
   }
   .about-us-container .malinjak-container .malinjak-text {
-    padding: 20px 10px;
+    padding: 40px 10px;
     text-align: center;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1608,7 +1610,7 @@ body {
   }
   .about-us-container .map-container .map-text {
     font-size: 1rem;
-    padding: 30px 10px;
+    padding: 40px 10px;
     margin: 0;
     text-align: center;
   }
@@ -1632,7 +1634,7 @@ body {
     width: 100%;
   }
   .about-us-container .storage-text {
-    padding: 20px 10px;
+    padding: 40px 10px;
     text-align: center;
     font-size: 1rem;
   }
@@ -1704,8 +1706,9 @@ body {
     padding: 25px 10px 0 10px;
   }
   .produce-container .fruit-wrap .produce-title h2 {
-    width: 330px;
+    width: 180px;
     font-size: 1.5rem;
+    text-align: center;
   }
   .produce-container .fruit-wrap .frozen-fruits {
     display: -ms-grid;
@@ -1736,7 +1739,7 @@ body {
     padding: 25px 10px;
   }
   .produce-container .service-wrap {
-    padding: 10px 20px;
+    padding: 10px 20px 30px 20px;
   }
   .produce-container .service-wrap .icons-title {
     padding: 0;
@@ -1780,7 +1783,7 @@ body {
   }
   .produce-container .bottom-text p {
     font-size: 1.2rem;
-    padding: 20px 0;
+    padding: 40px 0;
     margin: 0;
   }
   .produce-container .bottom-text .line {
@@ -1851,15 +1854,20 @@ body {
   .contact-container .contact-body .customers-form-wrap .input-form input {
     width: 220px;
     height: 35px;
+    font-size: 1rem;
     padding: 4px 0 4px 0;
   }
   .contact-container .contact-body .customers-form-wrap .text-form {
     width: 280px;
     height: 140px;
   }
+  .contact-container .contact-body .customers-form-wrap .text-form i {
+    padding: 8px 0 3px 10px;
+  }
   .contact-container .contact-body .customers-form-wrap .text-form textarea {
     width: 220px;
     height: 130px;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
