@@ -19,8 +19,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 3fr 1fr;
       grid-template-columns: 1fr 3fr 1fr;
-  -ms-grid-rows: 600px 400px 500px 600px 500px 250px;
-      grid-template-rows: 600px 400px 500px 600px 500px 250px;
+  -ms-grid-rows: 600px 500px 500px 600px 500px 250px;
+      grid-template-rows: 600px 500px 500px 600px 500px 250px;
 }
 
 .header-wrap {
@@ -135,7 +135,7 @@ body {
 .dot-container {
   z-index: 3;
   position: absolute;
-  top: 500px;
+  top: 550px;
   left: 0;
   right: 0;
   margin: 0;
@@ -384,7 +384,7 @@ body {
 
 .about-us-home p {
   letter-spacing: 1px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 300;
   padding: 25px 0;
@@ -435,6 +435,7 @@ body {
   text-align: center;
   font-size: 2.9rem;
   font-weight: 600;
+  text-shadow: 1px 1px 4px black;
   padding-bottom: 15px;
 }
 
@@ -735,7 +736,7 @@ body {
 
 .malinjak-container .malinjak img {
   width: 560px;
-  max-height: 500px;
+  max-height: 430px;
   -webkit-box-shadow: 2px 2px 4px gray;
           box-shadow: 2px 2px 4px gray;
 }
@@ -745,7 +746,6 @@ body {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  margin: auto;
 }
 
 .malinjak-container .malinjak-text h3 {
@@ -1474,6 +1474,7 @@ body {
   }
   .citat h2 {
     font-size: 1.4rem;
+    padding: 0 15px;
   }
   .citat span {
     font-size: 1.2rem;
@@ -1518,6 +1519,9 @@ body {
   }
   .nature .ba1 img {
     width: 280px;
+  }
+  .footer {
+    padding: 0 78px;
   }
   .footer .logo {
     width: 200px;
@@ -1669,6 +1673,8 @@ body {
   }
   .about-us-container .counters .counter-wrap h4 {
     font-size: 1rem;
+    padding-top: 0.5rem;
+    line-height: 1.5rem;
   }
   .produce-container {
     display: -webkit-box;
@@ -1679,9 +1685,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .produce-container p {
-    font-size: 1rem;
   }
   .produce-container .header-background {
     height: 300px;
@@ -1732,6 +1735,7 @@ body {
   }
   .produce-container .middle-text p {
     border: none;
+    font-size: 1rem;
     padding: 25px 10px;
   }
   .produce-container .service-wrap {

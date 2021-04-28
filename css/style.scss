@@ -15,7 +15,7 @@
     .main {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: 600px 400px 500px 600px 500px 250px;
+        grid-template-rows: 600px 500px 500px 600px 500px 250px;
     }
     
     // header
@@ -105,7 +105,7 @@
     .dot-container {
         z-index: 3;
         position: absolute;
-        top: 500px;
+        top: 550px;
         left: 0;
         right: 0;
         margin: 0;
@@ -326,7 +326,7 @@
         }
         p {
             letter-spacing: 1px;
-            font-size: 1.8rem;
+            font-size: 2rem;
             text-align: center;
             font-weight: 300;
             padding: 25px 0;
@@ -360,6 +360,7 @@
             text-align: center;
             font-size: 2.9rem;
             font-weight: 600;
+            text-shadow: 1px 1px 4px black;
             padding-bottom: 15px;
         }
         span {
@@ -567,14 +568,13 @@
             order: 2;
             img {
                 width: 560px;
-                max-height: 500px;
+                max-height: 430px;
                 box-shadow: 2px 2px 4px gray;
             }
         }
         .malinjak-text {
             padding-right: 100px;
             order: 1;
-            margin: auto;
             h3 {
                 text-transform: uppercase;
                 font-weight: bold;
@@ -1125,6 +1125,7 @@
             box-shadow: 0 1px 4px grey;
             h2 {
                 font-size: 1.4rem;
+                padding: 0 15px;
             }
             span {
                 font-size: 1.2rem;
@@ -1171,6 +1172,7 @@
         }
         //footer
         .footer {
+            padding: 0 78px;
             .logo {
                 width: 200px;
                 margin: 20px;
@@ -1288,6 +1290,8 @@
                     }
                     h4 {
                         font-size: 1rem;
+                        padding-top: 0.5rem;
+                        line-height: 1.5rem;
                     }
                 }
             }
@@ -1297,9 +1301,6 @@
             display: flex;
             width: 100%;
             flex-direction: column;
-            p {
-                font-size: 1rem;
-            }
             .header-background {
                 height: 300px;
                 h1 {
@@ -1350,6 +1351,7 @@
             .middle-text {
                 p {
                     border: none;
+                    font-size: 1rem;
                     padding: 25px 10px;
                 }
             }
