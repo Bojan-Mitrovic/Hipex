@@ -1870,4 +1870,10 @@ body {
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 330px) {
+  .footer {
+    padding: 0 55px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
