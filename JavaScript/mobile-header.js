@@ -1,9 +1,9 @@
-const navBar = document.querySelector('.mobile-nav-bar');
-const logo = document.querySelector('.mobile-logo');
-const open = document.querySelector('.menu-bar-open');
-const close = document.querySelector('.menu-bar-close');
-const slideControls = document.querySelector('.dot-container');
-const logoOpen = document.querySelector('.logo-open-btn');
+export const navBar = document.querySelector('.mobile-nav-bar');
+export const logo = document.querySelector('.mobile-logo');
+export const open = document.querySelector('.menu-bar-open');
+export const close = document.querySelector('.menu-bar-close');
+export const slideControls = document.querySelector('.dot-container');
+export const logoOpen = document.querySelector('.logo-open-btn');
 
 // showing navBar 
 open.addEventListener('click', function() {

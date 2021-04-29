@@ -5,12 +5,12 @@ const sliders = document.querySelectorAll('.icon-wrap');
 
 
 
-const headerOptions = {
+export const headerOptions = {
     rootMargin: '-60px 0px 0px 0px',
 }
 
 // adding background to header when leave slides 
-const fixedHeader = new IntersectionObserver(function(entries) {
+export const fixedHeader = new IntersectionObserver(function(entries) {
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
@@ -28,11 +28,11 @@ fixedHeader.observe(slidesContainer);
 
 
 // icons sliding inside 
-const slideOptions = {
+export const slideOptions = {
     threshold: 1,
     rootMargin: '0px 0px 60px 0px'
 };
-const slideIcons = new IntersectionObserver(function(entries, slideIcons) {
+export const slideIcons = new IntersectionObserver(function(entries, slideIcons) {
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) {

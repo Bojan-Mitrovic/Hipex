@@ -4,7 +4,7 @@ const headerOptions = {
         rootMargin: '0px',
     }
     // adding background to header when leave about us intro
-const headerBackground = new IntersectionObserver(function(entries) {
+export const headerBackground = new IntersectionObserver(function(entries) {
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) {

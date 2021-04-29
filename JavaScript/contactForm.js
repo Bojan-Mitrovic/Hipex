@@ -1,10 +1,10 @@
 // listening for submit
-const contactForm = document.querySelector('.contact-form');
+export const contactForm = document.querySelector('.contact-form');
 
 contactForm.addEventListener('sumbit', submitForm);
 
 // submit form 
-function submitForm(e) {
+export function submitForm(e) {
     e.preventDefault();
 
     // Get values

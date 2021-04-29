@@ -1542,12 +1542,18 @@ body {
   .about-us-container .header-intro {
     height: 300px;
     background-attachment: unset;
+    -webkit-box-shadow: 0px 2px 8px grey;
+            box-shadow: 0px 2px 8px grey;
+  }
+  .about-us-container .header-intro .about-us-headline {
+    width: auto;
+    top: 47%;
   }
   .about-us-container .header-intro h1 {
     font-size: 2rem;
   }
   .about-us-container .intro-about-us {
-    padding: 30px 10px;
+    padding: 30px 10px 0 10px;
   }
   .about-us-container .intro-about-us p {
     font-size: 1rem;
@@ -1557,7 +1563,7 @@ body {
   }
   .about-us-container .intro-about-us .line {
     border-top: 1px solid black;
-    margin: 0 20px;
+    margin: 30px 20px 0 20px;
   }
   .about-us-container .malinjak-container {
     padding: 40px 0px;
@@ -1569,12 +1575,12 @@ body {
   }
   .about-us-container .malinjak-container img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     -webkit-box-shadow: 0 1px 0px grey;
             box-shadow: 0 1px 0px grey;
   }
   .about-us-container .malinjak-container .malinjak-text {
-    padding: 40px 10px;
+    padding: 40px 10px 0 10px;
     text-align: center;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1657,9 +1663,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1667,6 +1670,7 @@ body {
   .about-us-container .counters .counter-wrap {
     height: 200px;
     width: 200px;
+    margin-top: 20px;
   }
   .about-us-container .counters .counter-wrap .counter-container {
     font-size: 1.5rem;
@@ -1692,6 +1696,7 @@ body {
   .produce-container .header-background h1 {
     font-size: 2rem;
     text-align: center;
+    margin-top: 33%;
   }
   .produce-container .service-intro p {
     font-size: 1.2rem;
@@ -1719,7 +1724,7 @@ body {
     padding-bottom: 25px;
   }
   .produce-container .fruit-wrap .frozen-fruits .fruit-container {
-    height: 150px;
+    height: 180px;
   }
   .produce-container .fruit-wrap .frozen-fruits .fruit-container:hover {
     -webkit-transform: none;
@@ -1736,10 +1741,10 @@ body {
   .produce-container .middle-text p {
     border: none;
     font-size: 1rem;
-    padding: 25px 10px;
+    padding: 40px 10px;
   }
   .produce-container .service-wrap {
-    padding: 10px 20px 30px 20px;
+    padding: 20px 20px 30px 20px;
   }
   .produce-container .service-wrap .icons-title {
     padding: 0;
@@ -1754,9 +1759,6 @@ body {
         grid-template-rows: repeat(3, 1fr);
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-  }
-  .produce-container .service-wrap .service-icon-wrap {
-    height: 180px;
   }
   .produce-container .service-wrap .service-icon-wrap:hover {
     -webkit-transform: none;
@@ -1868,6 +1870,12 @@ body {
     width: 220px;
     height: 130px;
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .footer {
+    padding: 0 90px;
   }
 }
 
