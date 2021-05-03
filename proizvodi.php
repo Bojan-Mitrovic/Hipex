@@ -18,17 +18,17 @@
         <div class="header-wrap">
             <div class="header">
                 <div class="logo">
-                    <a href="./index.html">
+                    <a href="./index.php">
                         <img src="./css/images/hipex logo.png" alt="">
                     </a>
                 </div>
                 <div class="nav-bar-container">
                     <div class="nav-bar">
                         <ul>
-                            <li><a href="index.html">POČETNA</a></li>
-                            <li><a href="aboutUs.html">O NAMA</a></li>
-                            <li><a href="proizvodi.html">PROIZVODI I USLUGE</a></li>
-                            <li><a href="kontakt.html">KONTAKT</a></li>
+                            <li><a href="index.php">POČETNA</a></li>
+                            <li><a href="aboutUs.php">O NAMA</a></li>
+                            <li><a href="proizvodi.php">PROIZVODI I USLUGE</a></li>
+                            <li><a href="kontakt.php">KONTAKT</a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
         <!-- mobile header  -->
         <div class="mobile-header">
             <div class="mobile-logo">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="./css/images/hipex logo.png" alt="">
                 </a>
             </div>
@@ -53,10 +53,10 @@
 
                 <div class="mobile-nav-bar">
                     <ul>
-                        <li><a href="index.html">POČETNA</a></li>
-                        <li><a href="aboutUs.html">O NAMA</a></li>
-                        <li><a href="proizvodi.html">PROIZVODI I USLUGE</a></li>
-                        <li><a href="kontakt.html">KONTAKT</a></li>
+                        <li><a href="index.php">POČETNA</a></li>
+                        <li><a href="aboutUs.php">O NAMA</a></li>
+                        <li><a href="proizvodi.php">PROIZVODI I USLUGE</a></li>
+                        <li><a href="kontakt.php">KONTAKT</a></li>
                     </ul>
                 </div>
             </div>
@@ -194,7 +194,7 @@
 
             <div class="footer">
                 <div class="logo ">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="./css/images/hipex logo.png " alt="logo ">
                     </a>
                 </div>
@@ -204,7 +204,7 @@
                     <p class="text-center ">Broj telefona: <a href="tel:+38758430474">+387 58 430 474</a> ;
                         <a href="tel:+38758430010">+387 58 430 010</a></p>
                     <p class="text-center ">Fax: <a href="fax:+38758430198">+387 58 430 198</a></p>
-                    <p class="text-center">Mail: <a id="mail" href="mailto:hip-ex@teol.net.">hip-ex@teol.net.</a></p>
+                    <p class="text-center">Mail: <a id="mail" href="mailto:hip-ex@teol.net">hip-ex@teol.net</a></p>
                 </div>
             </div>
         </div>

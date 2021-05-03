@@ -18,17 +18,17 @@
         <div class="header-wrap">
             <div class="header">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="./css/images/hipex logo.png" alt="">
                     </a>
                 </div>
                 <div class="nav-bar-container">
                     <div class="nav-bar">
                         <ul>
-                            <li><a href="index.html">POČETNA</a></li>
-                            <li><a href="aboutUs.html">O NAMA</a></li>
-                            <li><a href="proizvodi.html">PROIZVODI I USLUGE</a></li>
-                            <li><a href="kontakt.html">KONTAKT</a></li>
+                            <li><a href="index.php">POČETNA</a></li>
+                            <li><a href="aboutUs.php">O NAMA</a></li>
+                            <li><a href="proizvodi.php">PROIZVODI I USLUGE</a></li>
+                            <li><a href="kontakt.php">KONTAKT</a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
         <!-- mobile header  -->
         <div class="mobile-header">
             <div class="mobile-logo">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="./css/images/hipex logo.png" alt="">
                 </a>
             </div>
@@ -54,10 +54,10 @@
 
                 <div class="mobile-nav-bar">
                     <ul>
-                        <li><a href="index.html">POČETNA</a></li>
-                        <li><a href="aboutUs.html">O NAMA</a></li>
-                        <li><a href="proizvodi.html">PROIZVODI I USLUGE</a></li>
-                        <li><a href="kontakt.html">KONTAKT</a></li>
+                        <li><a href="index.php">POČETNA</a></li>
+                        <li><a href="aboutUs.php">O NAMA</a></li>
+                        <li><a href="proizvodi.php">PROIZVODI I USLUGE</a></li>
+                        <li><a href="kontakt.php">KONTAKT</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                 <!-- slide in text -->
                 <div class="slide-in-top">
                     <h1 class="slide-in-text">otkup i prodaja malina</h1>
-                    <a class="slides-btn" href="./proizvodi.html#service">saznaj više</a>
+                    <a class="slides-btn" href="./proizvodi.php#service">saznaj više</a>
                 </div>
                 <img src="./css/images/slide1.png" style="width:100%" alt="1st slide">
                 <div class="text "></div>
@@ -81,7 +81,7 @@
                 <div class="slide-in-right">
                     <h1 class="slide-in-text">uslužno</h1>
                     <h1 class="slide-in-text">zamrzavanje</h1>
-                    <a class="slides-btn" href="./proizvodi.html#service">saznaj više</a>
+                    <a class="slides-btn" href="./proizvodi.php#service">saznaj više</a>
                 </div>
                 <img src="./css/images/slide2.png" style="width:100%" alt="2nd slide">
                 <div class="text "></div>
@@ -90,7 +90,7 @@
             <div class="slides fade">
                 <div class="scale-in-ver-top">
                     <h1 class="slide-in-text">skladištenje i čuvanje</h1>
-                    <a class="slides-btn" href="./proizvodi.html#service">saznaj više</a>
+                    <a class="slides-btn" href="./proizvodi.php#service">saznaj više</a>
                 </div>
                 <img src="./css/images/slide3.png " style="width:100% " alt="3rd slide ">
                 <div class="text "></div>
@@ -107,7 +107,7 @@
         <div class="about-us-home">
             <h2>O nama</h2>
             <p>Preduzeće Hip-ex je osnovano 2007.godine, kada počinje sa radom preuzimanjem Hladnjače u Novom Goraždu. Naša osnovna djelatnost je proizvodnja, otkup i prerada jagodičastog voća...</p>
-            <a class="slides-btn" href="aboutUs.html">saznaj više</a>
+            <a class="slides-btn" href="aboutUs.php">saznaj više</a>
         </div>
 
         <!-- 4th sector -->
@@ -122,7 +122,7 @@
                 <!-- single item -->
                 <div class="icon-wrap raspeberry">
                     <div class="icon">
-                        <a href="./proizvodi.html#service">
+                        <a href="./proizvodi.php#service">
                             <img src="./css/images/malina1.png" alt="malina">
                         </a>
                     </div>
@@ -131,7 +131,7 @@
                 <!-- single item -->
                 <div class="icon-wrap palett">
                     <div class="icon">
-                        <a href="./proizvodi.html#service">
+                        <a href="./proizvodi.php#service">
                             <img src="./css/images/paleta2s.png" alt="paleta">
                         </a>
                     </div>
@@ -140,7 +140,7 @@
                 <!-- single item -->
                 <div class="icon-wrap truck">
                     <div class="icon">
-                        <a href="./proizvodi.html#service">
+                        <a href="./proizvodi.php#service">
                             <img src="./css/images/kamion11.png" alt="kamion">
                         </a>
                     </div>
@@ -149,7 +149,7 @@
                 <!-- single item -->
                 <div class="icon-wrap flake">
                     <div class="icon">
-                        <a href="./proizvodi.html#service">
+                        <a href="./proizvodi.php#service">
                             <img src="./css/images/flake1.png" alt="pahulja">
                         </a>
                     </div>
@@ -158,7 +158,7 @@
                 <!-- single item -->
                 <div class="icon-wrap spray">
                     <div class="icon">
-                        <a href="./proizvodi.html#service">
+                        <a href="./proizvodi.php#service">
                             <img src="./css/images/spray1.png" alt="sprej">
                         </a>
                     </div>
@@ -167,7 +167,7 @@
                 <!-- single item -->
                 <div class="icon-wrap hands">
                     <div class="icon">
-                        <a href="./proizvodi.html#service" alt="">
+                        <a href="./proizvodi.php#service" alt="">
                             <img src="./css/images/ruke.png" alt="ruke slika">
                         </a>
                     </div>
@@ -179,7 +179,7 @@
         <!-- 6th part - location -->
         <div class="nature ">
             <div class="ba1">
-                <a href="./aboutUs.html#map">
+                <a href="./aboutUs.php#map">
                     <img src="./css/images/ba-0515.png" alt="">
                 </a>
             </div>
@@ -190,7 +190,7 @@
         <div class="home-footer footer">
             <div class="footer ">
                 <div class="logo ">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="./css/images/hipex logo.png " alt="logo ">
                     </a>
                 </div>
@@ -202,17 +202,17 @@
                 <p class="text-center ">Broj telefona: <a href="tel:+38758430474">+387 58 430 474</a> ;
                     <a href="tel:+38758430010">+387 58 430 010</a></p>
                 <p class="text-center ">Fax: <a href="fax:+38758430198">+387 58 430 198</a></p>
-                <p class="text-center">Mail: <a id="mail" href="mailto:hip-ex@teol.net.">hip-ex@teol.net.</a></p>
+                <p class="text-center">Mail: <a id="mail" href="mailto:hip-ex@teol.net">hip-ex@teol.net</a></p>
             </div>
         </div>
     </div>
-
 
     <script src="./JavaScript/slideshow.js"></script>
     <script type="module" src="./JavaScript/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script type="module" src="./JavaScript/sendEmail.js"></script>
 </body>
 
 </html>
