@@ -1,9 +1,9 @@
-export var i = 1;
-export var slideIndex = 2;
-export var globalTimeoutVariable;
+var i = 1;
+var slideIndex = 2;
+var globalTimeoutVariable;
 
 // function for dot commands
-export function currentSlide(n) {
+function currentSlide(n) {
     var slides = document.querySelectorAll('.slides');
     var dots = document.querySelectorAll('.dot');
 
@@ -52,12 +52,12 @@ export function currentSlide(n) {
     //reset timeout on every change
     globalTimeoutVariable = setTimeout(showSlides, 6000);
 
-}
+};
 
 showSlides();
 
 
-export function showSlides() {
+function showSlides() {
     var slides = document.querySelectorAll('.slides');
     var dots = document.querySelectorAll('.dot');
 

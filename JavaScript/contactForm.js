@@ -33,4 +33,16 @@ export function submitForm(e) {
     }
     console.log(saveMessage);
 
+
+    Email.send({
+        Host: "185.212.108.3",
+        Username: "username",
+        Password: "password",
+        To: 'them@website.com',
+        From: "you@isp.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    );
 }
