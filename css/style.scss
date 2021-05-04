@@ -1434,6 +1434,8 @@ body {
                 }
                 p {
                     font-size: 1rem;
+                    padding: 0 40px;
+                    line-height: none;
                 }
             }
             .customers-form-wrap {
@@ -1481,6 +1483,17 @@ body {
 
 // ================================adjusting footer for small screens =====================================
 @media only screen and (max-width: 330px) {
+    .header-background {
+        height: 300px;
+        h1 {
+            margin-top: 40%;
+        }
+    }
+    .company-informations {
+        p {
+            padding: 0 20px;
+        }
+    }
     .footer {
         padding: 0 55px;
     }

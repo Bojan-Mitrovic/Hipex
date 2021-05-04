@@ -1839,6 +1839,8 @@ body {
   }
   .contact-container .contact-body .company-informations p {
     font-size: 1rem;
+    padding: 0 40px;
+    line-height: none;
   }
   .contact-container .contact-body .customers-form-wrap {
     margin: 25px;
@@ -1881,6 +1883,15 @@ body {
 }
 
 @media only screen and (max-width: 330px) {
+  .header-background {
+    height: 300px;
+  }
+  .header-background h1 {
+    margin-top: 40%;
+  }
+  .company-informations p {
+    padding: 0 20px;
+  }
   .footer {
     padding: 0 55px;
   }
