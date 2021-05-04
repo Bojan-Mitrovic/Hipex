@@ -1,9 +1,9 @@
 const counters = document.querySelectorAll('.counter');
 const counterWrap = document.querySelectorAll('.counter-wrap');
-const speed = 50;
+const speed = 100;
 
 // for each counter number 
-const risingNumbers = () => {
+export const risingNumbers = () => {
     counters.forEach(counter => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
@@ -26,11 +26,11 @@ const risingNumbers = () => {
 
 
 // start counting when scroll down to the page
-const counterOptions = {
+export const counterOptions = {
     threshold: 1,
     rootMargin: '0px 0px 60px 0px'
 };
-const countingUp = new IntersectionObserver(function(entries, countingUp) {
+export const countingUp = new IntersectionObserver(function(entries, countingUp) {
 
     entries.forEach(entry => {
         if (!entry.isIntersecting) {

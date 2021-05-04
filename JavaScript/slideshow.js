@@ -51,10 +51,11 @@ function currentSlide(n) {
     }
     //reset timeout on every change
     globalTimeoutVariable = setTimeout(showSlides, 6000);
-}
 
+};
 
 showSlides();
+
 
 function showSlides() {
     var slides = document.querySelectorAll('.slides');
