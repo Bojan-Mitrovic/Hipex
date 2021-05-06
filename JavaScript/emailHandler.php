@@ -6,7 +6,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $postmessage = $_POST['message'];
-$to = "example@email.com";
+$to = "hip-ex@teol.com";
 $subject = "Kontakt sa sajta";
 // Email Template
 $message = "<b>Ime i prezime : </b>" . $name . "<br>";
