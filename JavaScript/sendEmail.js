@@ -1,4 +1,4 @@
-$("#contactForm").submit(function(e) {
+  $('#contactForm').submit(function ( e ) {
     var data = {
         name: $("#name").val(),
         email: $("#email").val(),
@@ -6,12 +6,15 @@ $("#contactForm").submit(function(e) {
         message: $("#message").val(),
     };
     // POST data to the php file
-    $.ajax({
-        url: "http://hipex.ba/emailHandler.php",
+    $.ajax({ 
+        url: 'https://hipex.ba/emailHandler.php', 
         data: data,
-        type: "POST",
-        success: function(data) {
-            // For Notification
+        type: 'POST',
+        error: function (error) {
+          console.log(error);
+        },
+        success: function (data) {
+			// For Notification
             var $alertDiv = $(".mailResponse");
             $alertDiv.show();
             $alertDiv.find(".alert").removeClass("alert-danger alert-success");
@@ -23,8 +26,8 @@ $("#contactForm").submit(function(e) {
                 $alertDiv.find(".alert").addClass("alert-success");
                 $alertDiv.find(".mailResponseText").text(data.message);
             }
-            // document.getElementById("contactForm").reset();
-        },
+            document.getElementById("contactForm").reset();
+        }
     });
     e.preventDefault();
 });
